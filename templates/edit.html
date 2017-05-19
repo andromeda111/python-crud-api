@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>{{person.name}}</h1>
+
+    <h2>Age: {{person.age}}</h2>
+
+    <h2>ID: {{person.id}}</h2>
+
+    <hr>
+
+    <form class="" action="/profile/edit/{{person.id}}/update" method="post">
+      <label for="name">Edit Name</label>
+      <input id="name" type="text" name="name" value="">
+      <label for="age">Edit Age</label>
+      <input id="age" type="text" name="age" value="">
+      <input type="submit" name="submit" value="Submit">
+    </form>
+  </body>
+</html>
