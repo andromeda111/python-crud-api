@@ -24,7 +24,7 @@
     {% for person in myPerson %}
     <tr>
       <td>{{person.id}}</td>
-      <td>{{person.name}}</td>
+      <td><a href="/profile/{{person.id}}">{{person.name}}</a></td>
       <td>{{person.age}}</td>
       <td><a href="/profile/edit/{{person.id}}"><button type="button" name="button">Edit</button></a></td>
       <td><form action="/profile/delete/{{person.id}}" method="post">
